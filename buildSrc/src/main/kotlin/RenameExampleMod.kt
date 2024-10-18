@@ -24,7 +24,6 @@ abstract class RenameExampleMod @Inject constructor(private val dir: File, priva
         val modDir = File(javaDir, "toni/examplemod/")
 
         rename(resourcesDir, "mixins.example_mod.json", "mixins.$modId.json")
-        rename(resourcesDir, "example_mod.accesswidener", "$modId.accesswidener")
 
         rename(resourcesDir, "assets/example_mod", "assets/$modId")
         rename(resourcesDir, "data/example_mod", "data/$modId")

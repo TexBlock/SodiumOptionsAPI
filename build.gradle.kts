@@ -186,13 +186,7 @@ dependencies {
 
 // Loom config
 loom {
-	val awFile = rootProject.file("src/main/resources/${mod.id}-${mcVersion}.accesswidener")
-	if (awFile.exists())
-		accessWidenerPath.set(awFile)
-
-
 	if (loader == "forge") forge {
-		convertAccessWideners.set(true)
 		mixinConfigs("mixins.${mod.id}.json")
 	} else if (loader == "neoforge") neoForge {
 
